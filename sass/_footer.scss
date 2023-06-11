@@ -1,0 +1,50 @@
+.footer{
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: hsl(167, 40%, 24%);
+    background-color: hsl(168, 43%, 70%);
+    
+
+    a{
+    color: hsl(168, 34%, 41%);
+    padding: 10px;
+    font-family: 'Barlow',serif;
+    text-transform: capitalize;
+
+    &:hover{
+        color: #fff;
+    }
+    }
+
+    h6{
+        font-size: 2em;
+    }
+}
+.icons{
+    padding: 30px;
+}
+.icon{
+
+    svg{
+        fill: #2C7566; 
+    }
+    
+
+    svg:hover{
+        fill: #fff;
+    }
+}
+.others{
+    overflow: hidden;
+}
+
+@media screen and (max-width:900px) {
+    .footer{
+        height: 400px;
+    }
+
+
+}

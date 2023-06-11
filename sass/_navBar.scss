@@ -1,0 +1,159 @@
+header{
+    height: 100vh;
+    background-image: url('image-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 10px 20px;
+    
+
+}
+.navBar{
+    height: 90px;
+    display: flex;
+    padding: 10px;
+    color: #fff;
+    overflow: hidden;
+
+    &-text{
+        position: absolute;
+        left: 50%;
+        letter-spacing: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: -390px;
+        font-size: 2em;
+    }
+
+    p{
+        margin: 20px;
+    }
+
+    &-contactBtn{
+        margin: 10px 10px 25px 10px;
+        border-radius: 9999px;
+        background-color: #fff;
+        width: 100px;
+        height: 45px;
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+
+        &:hover{
+            cursor: pointer;
+            background: hsl(200, 100%, 77%);
+            color: #fff;
+        }
+    }
+
+
+}
+.logo{
+    flex-grow: 1;
+    margin: 15px;
+    text-align: start;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+
+
+
+.arrow-icon{
+    margin: auto;
+
+}
+h2{
+    margin: 50px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+}
+button{
+    border: none;
+    
+}
+.mobileHeader{
+    display: none;
+}
+.mobileNavBar{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width:900px) {
+
+    .navBar{
+
+        &-text{
+            margin-left: -330px;
+        }
+
+    }
+
+    h2{
+        text-align: center;
+    }
+
+}
+@media screen and (max-width:550px) {
+    .navBar{
+        display: none;
+
+        &-text{
+            margin-left: -200px;
+            font-size: 1.4em;
+        }
+
+    }
+
+    .mobileHeader{
+        display: flex;
+}
+
+
+.hamburger{
+    margin: 15px;
+    fill: #fff;
+
+    &:hover + .mobileNavBar{display: flex;}
+
+}
+
+.mobile-contactBtn{
+    margin: 5px;
+    border-radius: 9999px;
+    background-color: hsl(51, 100%, 49%);
+    width: 100px;
+    height: 45px;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+}
+.mobileNavBar{
+    display: none;
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    z-index: 10;
+    left: 50px;
+
+    p{
+        color: hsl(232, 10%, 55%);
+    }
+
+    }
+
+
+}
+

@@ -1,0 +1,14 @@
+@use 'reset';
+@use 'navBar';
+@use 'main';
+@use 'testimonials';
+@use 'footerGallery';
+@use 'footer';
+
+*{
+    font-family: 'Barlow',sans-serif;
+    
+}
+body{
+    overflow-x: hidden;
+}
